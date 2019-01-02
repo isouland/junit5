@@ -24,11 +24,14 @@ repository on GitHub.
 
 ==== Deprecations and Breaking Changes
 
-* ❓
+* `TestPlan.add(TestIdentifier)` was always considered internal but was missing
+  a corresponding `@API` annotation.
 
 ==== New Features and Improvements
 
-* ❓
+* `Launcher` now provides an `execute(TestPlan, TestExecutionListener...)`
+  method that allows to execute a previously discovered `TestPlan`.
+* `@RunWith(JUnitPlatform.class)` no longer executes test discovery twice.
 
 
 [[release-notes-5.4.0-M2-junit-jupiter]]
