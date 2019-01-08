@@ -103,8 +103,9 @@ public interface Launcher {
 	 * {@linkplain #registerTestExecutionListeners registered listeners} about
 	 * the progress and results of the execution.
 	 *
-	 * <p>Supplied test execution listeners are registered in addition to already
-	 * registered listeners but only for the supplied launcher discovery request.
+	 * <p>Supplied test execution listeners are registered in addition to
+	 * already registered listeners but only for the execution of the supplied
+	 * test plan.
 	 *
 	 * @param testPlan the test plan to execute; never {@code null}
 	 * @param listeners additional test execution listeners; never {@code null}

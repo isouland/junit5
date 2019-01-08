@@ -24,13 +24,13 @@ repository on GitHub.
 
 ==== Deprecations and Breaking Changes
 
-* `TestPlan.add(TestIdentifier)` was always considered internal but was missing
-  a corresponding `@API` annotation.
+* `TestPlan.add(TestIdentifier)` has always been considered _internal_ and is now
+  appropriately annotated with `@API(status = INTERNAL)`.
 
 ==== New Features and Improvements
 
-* `Launcher` now provides an `execute(TestPlan, TestExecutionListener...)`
-  method that allows to execute a previously discovered `TestPlan`.
+* The `Launcher` API now provides an `execute(TestPlan, TestExecutionListener...)`
+  method that allows one to execute a previously discovered `TestPlan`.
 * `@RunWith(JUnitPlatform.class)` no longer executes test discovery twice.
 
 
