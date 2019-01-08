@@ -90,7 +90,7 @@ public interface Launcher {
 	 * previously passed to {@link #discover(LauncherDiscoveryRequest)}, you
 	 * should instead call {@link #execute(TestPlan, TestExecutionListener...)}
 	 * and pass the already acquired {@link TestPlan} to avoid the potential
-	 * performance degradation (e.g. classpatch scanning) of running test
+	 * performance degradation (e.g., classpath scanning) of running test
 	 * discovery twice.
 	 *
 	 * @param launcherDiscoveryRequest the launcher discovery request; never {@code null}
